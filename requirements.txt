@@ -1,0 +1,6 @@
+numpy==1.18.1
+torch==1.4.0
+pymorphy2==0.8
+pandas==1.0.1
+ntplib==0.3.3
+pathlib==1.0.1

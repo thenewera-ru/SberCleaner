@@ -1,0 +1,54 @@
+{
+  "data": {
+    "input": {
+      "path": "./data/chats/"
+    },
+    "output": {
+      "path": "./data/output/chats/",
+      "params": {
+        "columns": [
+          "Дата",
+          "Идентификатор чата",
+          "Сообщение",
+          "Branch Code",
+          "Split Code"
+        ]
+      }
+    },
+    "params": {
+      "clientMessage": "Сообщение",
+      "id": "Идентификатор чата",
+      "authorMessage": "Инициатор",
+      "maxSequences": "3",
+      "minSequenceWords": "2",
+      "maxSequenceLength": "15",
+      "stopwords": [
+        {
+          "language": "ru",
+          "path": "./data/words/stopwords/russian"
+        },
+        {
+          "language": "en",
+          "path": "./data/words/stopwords/english"
+        }
+      ],
+      "branchcodes": {
+        "filepath": "./data/branchcodes/data.xlsx"
+      }
+    },
+    "formats": [
+      {
+        "type": "csv",
+        "config": {
+          "separator": ";"
+        }
+      },
+      {
+        "type": "xls",
+        "config": {
+
+        }
+      }
+    ]
+  }
+}
